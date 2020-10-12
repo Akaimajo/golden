@@ -2,7 +2,8 @@
 
 $transition: all 1s;
 $color-theme: #f3be00;
-$color-main: #777;
+$color-main: #ddd;
+$color-dark: #222;
 $color-light: #fff;
 $font-main: 'Varela Round',sans-serif;
 $font-logo: 'Pacifico',cursive;
@@ -45,12 +46,9 @@ a {
         flex-wrap: nowrap;
         align-items: center;
     }
-
-    
     ul {
         list-style-type: none;
-
-        li {
+         li {
             text-transform: uppercase;
             justify-content: space-around;
             font-size: 14px;
@@ -137,7 +135,7 @@ a {
     }
 
     p {
-        color: $color-main;
+        color: $color-dark;
         font-size: 14px;
         font-weight: 400;
         letter-spacing: -0.35px;
@@ -159,20 +157,21 @@ a {
 .portfolio {
     background-color: $color-main;
     .card {
-        background-color: $color-light;
         margin: 25px 17px;
-        position: relative;
+        background-color: $color-light;
+        color: $color-dark;
     }
     .card-image {
-        position: absolute;
         max-width: 100%;
-        height: 100px;
-        .img {
-            position: relative;
+        img {
             width: 100%;
-            height: 100%;
+            height: 150px;
             object-fit: cover;
         }
+    }
+    .card-body h2{
+        padding-bottom: 5px;
+        color: $color-dark;
     }
 }
 
@@ -193,8 +192,8 @@ a {
         line-height: 22px;
     }
     i {
-        color: $color-light;
-        background-color: $color-main;
+        color: $color-main;
+        background-color: $color-dark;
         border-radius: 50%;
         font-size: 20px;
         width: 40px;

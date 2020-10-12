@@ -129,7 +129,7 @@ a {
 }
 
 .container p {
-  color: #777;
+  color: #222;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.35px;
@@ -146,26 +146,28 @@ a {
 }
 
 .portfolio {
-  background-color: #777;
+  background-color: #ddd;
 }
 
 .portfolio .card {
-  background-color: #fff;
   margin: 25px 17px;
-  position: relative;
+  background-color: #fff;
+  color: #222;
 }
 
 .portfolio .card-image {
-  position: absolute;
   max-width: 100%;
-  height: 100px;
 }
 
-.portfolio .card-image .img {
-  position: relative;
+.portfolio .card-image img {
   width: 100%;
-  height: 100%;
+  height: 150px;
   object-fit: cover;
+}
+
+.portfolio .card-body h2 {
+  padding-bottom: 5px;
+  color: #222;
 }
 
 .page-footer {
@@ -187,8 +189,8 @@ a {
 }
 
 .page-footer i {
-  color: #fff;
-  background-color: #777;
+  color: #ddd;
+  background-color: #222;
   border-radius: 50%;
   font-size: 20px;
   width: 40px;
