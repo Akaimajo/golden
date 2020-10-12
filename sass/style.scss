@@ -2,7 +2,7 @@
 
 $transition: all 1s;
 $color-theme: #f3be00;
-$color-main: #222;
+$color-main: #777;
 $color-light: #fff;
 $font-main: 'Varela Round',sans-serif;
 $font-logo: 'Pacifico',cursive;
@@ -17,7 +17,6 @@ $font-logo: 'Pacifico',cursive;
 body {
     margin: 0;
     font-family: $font-main;
-    color: $color-light;
 }
 
 .container {
@@ -33,7 +32,6 @@ a {
 
 // navigation
 .navigation {
-    padding-top: 36px;
     background-image: url("https://images.pexels.com/photos/3785935/pexels-photo-3785935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     height: 100vh;
     background-position: center center;
@@ -45,26 +43,26 @@ a {
         margin: 0 auto;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
         align-items: center;
     }
 
-    #golden {
-        color: $color-theme;
-        font-family: $font-logo;
-        font-size: 2.5em;
-    }
-
+    
     ul {
         list-style-type: none;
 
         li {
-            display: inline-block;
             text-transform: uppercase;
+            justify-content: space-around;
             font-size: 14px;
             font-weight: 700;
-            // margin: 0 20px;
-            padding-left: 299px;
+            // margin-left: 20px;
+            padding-left: 20px;
+        }
+        #golden {
+            color: $color-theme;
+            font-family: $font-logo;
+            font-size: 2.5em;
+            padding-right: 300px;
         }
     }
 }
@@ -78,23 +76,22 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    color: $color-light;
     h2 {
+        margin-top: 100px;
         font-family: $font-main;
         font-style: italic;
-        font-size: 52px;
+        font-size: 40px;
         font-weight: 300;
-        text-transform: capitalize;
-        margin-top: 100px;
+        // text-transform: capitalize;
     }
 
     h1 {
-        font-size: 75px;
+        font-size: 60px;
         font-weight: 700;
         text-transform: uppercase;
         margin: 26px 0;
     }
-
     .button {
         display: inline-block;
         min-width: 240px;
@@ -156,7 +153,6 @@ a {
         width: 68px;
         height: 67px;
         line-height: 60px;
-        background-color: $color-light;
     }
 }
 // portfolio
@@ -165,13 +161,18 @@ a {
     .card {
         background-color: $color-light;
         margin: 25px 17px;
+        position: relative;
     }
     .card-image {
+        position: absolute;
         max-width: 100%;
         height: 100px;
-    }
-    .img {
-        object-fit: cover;
+        .img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
 
