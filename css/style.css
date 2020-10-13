@@ -48,18 +48,15 @@ a {
 
 .navigation ul li {
   text-transform: uppercase;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   font-size: 14px;
   font-weight: 700;
-  padding-left: 20px;
 }
 
 .navigation ul #golden {
   color: #f3be00;
   font-family: "Pacifico", cursive;
   font-size: 2.5em;
-  padding-right: 300px;
+  padding-right: 600px;
 }
 
 .splash-inner {

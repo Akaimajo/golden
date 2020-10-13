@@ -51,17 +51,17 @@ a {
         list-style-type: none;
          li {
             text-transform: uppercase;
-            justify-content: space-around;
+            // justify-content: center;
             font-size: 14px;
             font-weight: 700;
             // margin-left: 20px;
-            padding-left: 20px;
+            // padding-left: 5px;
         }
         #golden {
             color: $color-theme;
             font-family: $font-logo;
             font-size: 2.5em;
-            padding-right: 300px;
+            padding-right: 600px;
         }
     }
 }
